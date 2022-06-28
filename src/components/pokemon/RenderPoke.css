@@ -1,0 +1,10 @@
+.render-poke {
+  background-color: #f2ca27;
+  border-radius: 15px;
+  margin: 7px 9px;
+  width: 200px; max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 3px 0px;
+}
