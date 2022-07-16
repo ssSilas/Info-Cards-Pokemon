@@ -5,9 +5,12 @@ import RenderPoke from "./RenderPoke";
 import "./AddPokemon.css";
 
 const AddPokemon = ({ objPokemon }) => {
+  console.log(objPokemon)
   return (
     <div className="container-add-poke">
-      <RenderPoke objPokemon={objPokemon} />
+      {objPokemon.forEach((pokemon) => (
+        <RenderPoke objPokemon={pokemon} />
+      ))}
     </div>
   );
 };

@@ -8,8 +8,8 @@ const RenderPoke = ({objPokemon}) => {
   return ( 
     <>
       {objPokemon.map((pokemon) => 
-        <div className='render-poke' key={pokemon.id}>
-          <Pokemon pokemon={pokemon}/>
+        <div className='render-poke' key={objPokemon.id}>
+          <Pokemon pokemon={objPokemon}/>
         </div>
       )}
     </>

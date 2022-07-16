@@ -1,9 +1,8 @@
 
 .container-add-poke {
-  height: 100%;
-  width: 100%;
   margin: 10px 5px;
   display: flex;
   justify-content: flex-start;
+  flex-direction: row; 
   flex-wrap: wrap;
 }

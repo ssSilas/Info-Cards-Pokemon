@@ -3,9 +3,8 @@ import React from "react";
 import "./Pokemon.css";
 
 const Pokemon = ({ pokemon }) => {
-  console.log(pokemon);
   return (
-    <div className="container-panel-poke">
+    <div className="container-panel-poke" key={pokemon.id}>
       <img className="img-poke" src={pokemon.photo.front_default} />
       <h3 className="title-name-poke">{pokemon.name}</h3>
       <div className="container-type-poke">
