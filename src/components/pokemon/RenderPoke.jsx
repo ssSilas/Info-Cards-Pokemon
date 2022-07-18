@@ -1,19 +1,22 @@
-import React from 'react'
+import React from "react";
 
-import Pokemon from './Pokemon';
+import Pokemon from "./Pokemon";
 
-import './RenderPoke.css'
+import "./RenderPoke.css";
 
-const RenderPoke = ({objPokemon}) => {
-  return ( 
-    <>
-      {objPokemon.map((pokemon) => 
-        <div className='render-poke' key={objPokemon.id}>
-          <Pokemon pokemon={objPokemon}/>
-        </div>
-      )}
-    </>
+const RenderPoke = ({ pokemon }) => {
+  
+  return (
+    <div className="render-poke">
+      {pokemon.map(pk => {
+        return (
+          <div className="render-poke" key={pk.id}>
+            <Pokemon pokemon={pk} />
+          </div>
+        );
+      })}
+    </div>
   );
-}
- 
+};
+
 export default RenderPoke;

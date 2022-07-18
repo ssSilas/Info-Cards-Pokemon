@@ -9,12 +9,12 @@ import "./App.css";
 function App() {
   const url = `https://pokeapi.co/api/v2/pokemon?limit=3`;
   const { data, isFetching } = useFetch(url);
-
+  
   return (
     <>
       <Header />
-      {isFetching && <p>Carregando...</p>}
-      {typeof data !== "undefined" ? <AddPokemon objPokemon={data} /> : <p>Não rendereizou</p>}
+      {isFetching == true && <p>Carregando...</p>}
+      {isFetching == false ? <AddPokemon objPokemon={data} /> : <p>Não rendereizou</p>}
     </>
   );
 }
