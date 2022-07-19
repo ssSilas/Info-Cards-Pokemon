@@ -7,7 +7,7 @@ import useFetch from "./components/pokemon/useFetch";
 import "./App.css";
 
 function App() {
-  const url = `https://pokeapi.co/api/v2/pokemon?limit=3`;
+  const url = `https://pokeapi.co/api/v2/pokemon?limit=20`;
   const { data, isFetching } = useFetch(url);
   
   return (

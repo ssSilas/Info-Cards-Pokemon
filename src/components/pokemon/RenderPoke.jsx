@@ -1,20 +1,18 @@
 import React from "react";
+import { useEffect } from "react";
 
 import Pokemon from "./Pokemon";
 
 import "./RenderPoke.css";
 
 const RenderPoke = ({ pokemon }) => {
-  
+  useEffect(() => {
+    console.log(pokemon);
+  }, []);
+  console.log(pokemon);
   return (
     <div className="render-poke">
-      {pokemon.map(pk => {
-        return (
-          <div className="render-poke" key={pk.id}>
-            <Pokemon pokemon={pk} />
-          </div>
-        );
-      })}
+      <Pokemon pokemon={pokemon} />
     </div>
   );
 };
