@@ -1,7 +1,7 @@
 .render-poke {
-  background-color: #f2ca27;
   width: 15em; 
+  height: 19em;
   display: flex;
-  padding: 3px 0px;
+  padding: 5.6px 0px;
   /* flex-grow: 1; */
 }

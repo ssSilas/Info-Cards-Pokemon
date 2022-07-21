@@ -24,6 +24,9 @@ const useFetch = (url) => {
               name: response.name,
               photo: response.sprites.other.home,
               type: response.types,
+              icontype:{
+                
+              }
               // }
             };
             newData.push(getPoke);

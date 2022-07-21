@@ -9,13 +9,24 @@
   border-radius: 15px;
 }
 
+.container-icon-type{
+  width: 100%;
+  background-color:#132b4d;
+  border-radius: 15px 15px 0 0;
+  display: flex;
+}
+.icon-type {
+  width: 100%;
+  max-width: 25px;
+}
+
 .img-poke {
   background-color: #808475;
   width: 100%;
   max-width: 300px;
   height: auto;
   padding: 0px;
-  border-radius: 15px 15px 0 0;
+  /* border-radius: 15px 15px 0 0; */
 }
 
 .title-name-poke {
