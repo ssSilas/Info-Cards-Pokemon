@@ -1,11 +1,11 @@
 import React from "react";
-import { useState } from "react";
 
-import Pokemon from "./Pokemon";
+import Pokemon from "../info-card-data/Pokemon";
 
 import "./RenderPoke.css";
 
 const RenderPoke = ({ pokemon }) => {
+  
   const addIcons = (pokemon) => {
     pokemon.type.map((t, index) => {
       const name = t.type.name;
@@ -15,7 +15,7 @@ const RenderPoke = ({ pokemon }) => {
     });
     return pokemon
   };
-  // console.log(pokemon)
+
   return (
     <div className="render-poke">
       <Pokemon pokemon={addIcons(pokemon)} />
