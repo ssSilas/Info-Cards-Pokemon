@@ -1,15 +1,15 @@
 
 .container-add-poke {
-  /* margin: 10px 5px; */
+  margin: 10px 5px;
   display: flex;
-  justify-content: center;
-  /* flex-wrap: wrap; */
+  justify-content: space-between;
+  flex-wrap: wrap;
   /* flex-grow: 1; */
 }
 
 .panel-cards{
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   /* flex-grow: 1; */
 }

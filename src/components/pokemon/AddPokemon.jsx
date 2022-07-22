@@ -1,6 +1,6 @@
 import React from "react";
 
-import RenderPoke from "./RenderPoke";
+import RenderPoke from "./card/RenderPoke";
 
 import "./AddPokemon.css";
 
