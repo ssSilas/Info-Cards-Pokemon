@@ -18,13 +18,13 @@ const Pokemon = ({ pokemon }) => {
             )})}
         </div>
 
-        <div className="container-others-photos">
+        {/* <div className="container-others-photos">
 
           {Object.keys(pokemon.photo).map(key => {
             return (<ButtonPhoto key={key}/>)
           })}
 
-        </div>
+        </div> */}
 
       </div>
       
